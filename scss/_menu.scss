@@ -1,0 +1,39 @@
+//Style Menu Button
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    right: 5%;
+    cursor: pointer;
+    @include easeOut;
+
+    .btn-line {
+        width: 25px;
+        height: 3px;
+        margin-bottom: 3px;
+        border-radius: 3px;
+        background: #fff;
+        @include easeOut;
+    }
+
+    // Rotate Burger to X 
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+            // Line 1 - Rotate
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            // Line 2 - Hiding
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            // Line 1 - Rotate
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(4px, -3px);
+            }
+
+        }
+    }
+}
