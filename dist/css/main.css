@@ -1,4 +1,54 @@
 /* Reset style */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  height: 100%; }
+  body#bg-image {
+    background: linear-gradient(rgba(36, 36, 36, 0.6), rgba(36, 36, 36, 0.8)), url(../img/internet-technology.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+
+/* Heading */
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-header,
+  h2.lg-header,
+  h3.lg-header {
+    font-size: 4rem; }
+  h1.sm-header,
+  h2.sm-header,
+  h3.sm-header {
+    margin-bottom: 1rem; }
+
+a {
+  color: #ccc;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+main {
+  padding: 4rem;
+  height: 100vh; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0 .5rem 0 0;
+      transition: all 1s ease; }
+      main .icons a:hover {
+        color: #eecd1a;
+        transition: all .5s ease; }
+  main#home h1 {
+    border: solid;
+    margin-top: 20vh; }

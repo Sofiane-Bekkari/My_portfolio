@@ -1,0 +1,22 @@
+// Variable
+$primary-color: #555;
+$secondary-color: #eecd1a;
+$show-image-home: true;
+$image-home: url(../img/internet-technology.jpg);
+$background-opacity: 0.9;
+
+// Mixin
+@mixin easeOut {
+    transition: all .5s ease;
+}
+@mixin background {
+    @if $show-image-home {
+        &#bg-image {
+            background: linear-gradient(rgba(36, 36, 36, 0.6),
+            rgba(36, 36, 36, 0.8)),
+            $image-home ;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+}
