@@ -92,12 +92,28 @@
             border: solid 3px $secondary-color;
             width: 200px;
             height: 26%;
-            background: url('../img/me.jpeg') no-repeat center;
+            background: linear-gradient(rgba(43, 43, 43, 0.171),
+            rgba(37, 37, 37, 0.062)),
+             url('../img/me.jpeg') no-repeat center;
             background-position: center;
             background-size: cover;
             border-radius: 50%;
+            margin-bottom: 1rem;
             opacity: 1;
         }
+
+        .icons {
+          
+            a {
+                margin-right: .5rem;
+                @include easeOut();
+                &:hover {
+                    color: $secondary-color;
+                    @include easeOut();
+                }
+            }
+        }
+
     }
     .nav-item {
         padding: .5rem;

@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 /* Reset style */
 * {
@@ -12,7 +11,7 @@
 body {
     @include background;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: set-text-color($primary-color);
     line-height: 1.5;
     height: 100%;
 }
@@ -42,8 +41,8 @@ header {
 }
 main {
     padding: 4rem;
-    height: 100vh;
-
+    //height: 100vh;
+    min-height: calc(100vh - 2rem );
     .icons {
         margin-top: 1rem;
 
@@ -64,3 +63,58 @@ main {
       }
     }
 }
+
+// About Page Style 
+.about-info {
+    display: grid;
+    grid-template-areas:
+    'bioimg bio bio'
+    'job1 job2 job3';
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-img {
+        grid-area: bioimg;
+        width: 180px;
+        object-fit: cover;
+        object-position: top;
+        margin: auto;
+        height: 23vh;
+        border-radius: 50%;
+        border: solid $secondary-color;
+    }
+    .bio {
+        grid-area: bio;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .job1 {
+        grid-area: job1;
+    }
+    .job2 {
+        grid-area: job2;
+    }
+    .job3 {
+        grid-area: job3;
+    }
+    .job {
+        padding: 1rem;
+        background: $primary-color;
+        border-bottom: solid $secondary-color;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
+
+        h5 {
+            margin: .5rem 0;
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+}
+#main-footer {
+    text-align: center;
+    padding: 2rem;
+    background: $primary-color;
+}
+// Our Media At End for it take place! 
+@import 'mobile';

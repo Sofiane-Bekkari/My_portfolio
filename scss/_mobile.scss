@@ -45,6 +45,26 @@
         }
     }
 
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+    .bio {
+        margin: 1rem;
+        h3 {
+            padding: 1rem 0;
+        }
+    }
+    .job {
+        margin: 1rem 0;
+        h5 {
+            padding: .5rem 0;
+        }
+    }
 }
 
 // Smartphons
