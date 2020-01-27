@@ -2,7 +2,8 @@
 .menu-btn {
     position: absolute;
     z-index: 3;
-    top: 25%;
+    margin-top: 2rem;
+    top: 40%;
     right: 5%;
     cursor: pointer;
     @include easeOut;
@@ -35,5 +36,100 @@
             }
 
         }
+    }
+}
+
+// Menu Set Style
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.95;
+    visibility: hidden;
+
+    &.show {
+        visibility: visible;
+        border: solid $secondary-color;
+    }
+
+    &-branding,
+    &-nav {
+        border: solid;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        float: left;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    &-nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: darken($primary-color , 5);
+        transform: translate3d(0,100%,0);
+        @include easeOut();
+
+        &.show {
+            //Slide it form Bottom NAV
+            transform: translate3d(0,0,0);
+        }
+    }
+    &-branding {
+        background: $primary-color;
+        transform: translate3d(0,-100%,0);
+        @include easeOut();
+
+        &.show {
+            //Slide it form Bottom NAV
+            transform: translate3d(0,0,0);
+        }
+
+        .portrait {
+            border: solid 3px $secondary-color;
+            width: 55%;
+            height: 25%;
+            background: url('../img/me.jpeg') no-repeat center;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            opacity: 1;
+        }
+    }
+    .nav-item {
+        padding: .5rem;
+        transform: translate3d(500px ,0,0);
+        @include easeOut();
+
+        &.show {
+            //Slide it form Bottom NAV
+            transform: translate3d(0,0,0);
+        }
+    }
+    .nav-link {
+        display: inline-block;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        @include easeOut();
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    .current {
+        color: $secondary-color;
+        border-bottom: solid 1px;
+    }
+}
+
+// Delay each nav item will slid by 0.2s
+@for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.2s;
     }
 }
