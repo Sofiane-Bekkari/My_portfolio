@@ -1,6 +1,6 @@
 // Variable
-$primary-color: #555;
-$secondary-color: #eecd1a;
+$primary-color: #10455e;
+$secondary-color: #0683c2;
 $show-image-home: true;
 $image-home: url(../img/internet-technology.jpg);
 $background-opacity: 0.9;
@@ -12,11 +12,38 @@ $background-opacity: 0.9;
 @mixin background {
     @if $show-image-home {
         &#bg-image {
-            background: linear-gradient(rgba(36, 36, 36, 0.6),
-            rgba(36, 36, 36, 0.8)),
+            background: linear-gradient(rgba(3, 40, 61, 0.938),
+            rgba(1, 51, 71, 0.856)),
             $image-home ;
             background-attachment: fixed;
             background-size: cover;
         }
+    }
+}
+
+// Media Query Mixin
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px)
+    and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (max-width: 1171px) {
+        @content;
     }
 }
