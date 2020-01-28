@@ -1,6 +1,8 @@
 // Widescreen style
 @include mediaXl {
-
+    .project {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 // Desktop & Laptop
@@ -65,10 +67,23 @@
             padding: .5rem 0;
         }
     }
+    .project {
+        grid-template-columns: repeat(2, 1fr);
+
+        h3 {
+            margin: .5rem 0;
+        }
+
+        h5 {
+            margin: 1rem 0;
+        }
+    }
 }
 
 // Smartphons
 @include mediaSm {
-    
+    .project {
+        grid-template-columns: 1fr;
+    }
 }
 

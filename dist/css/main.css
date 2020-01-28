@@ -191,10 +191,46 @@ main {
     .about-info .job p {
       font-size: .9rem; }
 
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+  .project h3 {
+    margin: .2rem 0; }
+  .project h5 {
+    margin: .5rem 0; }
+  .project img {
+    background-size: cover;
+    transition: all .3s ease; }
+    .project img:hover {
+      opacity: 0.9;
+      background: #10455e;
+      background-position: top;
+      transition: all .3s ease; }
+  .project .work {
+    padding: 1rem;
+    background: #10455e;
+    border-bottom: solid #0683c2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24); }
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  width: 100%;
+  padding: .2rem 0 .2rem 0;
+  transition: all .5s ease; }
+  .btn:hover, .btn-light:hover, .btn-dark:hover {
+    background: #056595;
+    transition: all .5s ease;
+    color: #0c3244; }
+
 #main-footer {
   text-align: center;
   padding: 2rem;
-  background: #10455e; }
+  background: #092532; }
+
+@media screen and (min-width: 1171px) {
+  .project {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -233,4 +269,14 @@ main {
   .job {
     margin: 1rem 0; }
     .job h5 {
-      padding: .5rem 0; } }
+      padding: .5rem 0; }
+  .project {
+    grid-template-columns: repeat(2, 1fr); }
+    .project h3 {
+      margin: .5rem 0; }
+    .project h5 {
+      margin: 1rem 0; } }
+
+@media screen and (max-width: 500px) {
+  .project {
+    grid-template-columns: 1fr; } }

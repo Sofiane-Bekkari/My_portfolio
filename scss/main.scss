@@ -111,10 +111,67 @@ main {
         }
     }
 }
+
+// Project Page 
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    h3 {
+        margin: .2rem 0;
+    }
+
+    h5 {
+        margin: .5rem 0;
+    }
+
+    img {
+        background-size: cover;
+        transition: all .3s ease;
+      
+        &:hover {
+            opacity: 0.9;
+            background: $primary-color;
+            background-position: top;
+            transition: all .3s ease;
+        }
+    
+    }
+    .work {
+        padding: 1rem;
+        background: $primary-color;
+        border-bottom: solid $secondary-color;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
+
+    }
+}
+
+// Button style
+.btn {
+    display: block;
+    width: 100%;
+    padding: .2rem 0 .2rem 0;
+    @include easeOut();
+
+    &:hover {
+        background: darken($secondary-color,9) ;
+        @include easeOut();
+        color:  darken($primary-color, 6);
+    }
+
+}
+.btn-light {
+    @extend .btn; 
+}
+.btn-dark {
+    @extend .btn; 
+}
+
 #main-footer {
     text-align: center;
     padding: 2rem;
-    background: $primary-color;
+    background: darken($primary-color, 10);
 }
 // Our Media At End for it take place! 
 @import 'mobile';
