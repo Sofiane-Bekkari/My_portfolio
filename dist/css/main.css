@@ -213,6 +213,19 @@ main {
     border-bottom: solid #0683c2;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24); }
 
+.icons-contact h3 {
+  display: inline-block;
+  margin-bottom: .8rem;
+  margin-right: .5rem; }
+
+.icons-contact .fab {
+  font-size: 1.8rem;
+  margin-right: .5rem;
+  transition: all .5s ease; }
+  .icons-contact .fab:hover {
+    color: #0683c2;
+    transition: all .5s ease; }
+
 .btn, .btn-light, .btn-dark {
   display: block;
   width: 100%;

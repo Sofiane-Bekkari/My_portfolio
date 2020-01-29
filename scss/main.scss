@@ -147,6 +147,26 @@ main {
     }
 }
 
+// Contact Page 
+.icons-contact {
+    h3 {
+        display: inline-block;
+        margin-bottom: .8rem;
+        margin-right: .5rem;
+    }
+
+    .fab {
+        font-size: 1.8rem;
+        margin-right: .5rem;
+        @include easeOut();
+
+        &:hover {
+            color: $secondary-color;
+            @include easeOut();
+        }
+    }
+}
+
 // Button style
 .btn {
     display: block;
