@@ -44,17 +44,15 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.95;
+    opacity: 0.99;
     visibility: hidden;
 
     &.show {
         visibility: visible;
-        border: solid $secondary-color;
     }
 
     &-branding,
     &-nav {
-        border: solid;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -92,27 +90,35 @@
             border: solid 3px $secondary-color;
             width: 200px;
             height: 26%;
-            background: linear-gradient(rgba(43, 43, 43, 0.171),
-            rgba(37, 37, 37, 0.062)),
+            background:
              url('../img/me.jpeg') no-repeat center;
             background-position: center;
             background-size: cover;
             border-radius: 50%;
-            margin-bottom: 1rem;
+            margin: .5rem;
             opacity: 1;
         }
-
-        .icons {
+        .prof {
+            font-size: .9rem;
+            margin: .5rem 0;
+        }
+        .icons-prof {
           
             a {
                 margin-right: .5rem;
+                margin-top: .5rem;
                 @include easeOut();
                 &:hover {
                     color: $secondary-color;
                     @include easeOut();
+
                 }
             }
+            .fab {
+                
+            }   font-size: .7rem;
         }
+
 
     }
     .nav-item {

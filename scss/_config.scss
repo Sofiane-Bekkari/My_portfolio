@@ -1,8 +1,12 @@
 // Variable
 $primary-color: #10455e;
+$primary-sec-color: #073449;
 $secondary-color: #0683c2;
+$secondary-sec-color: #83d1f5;
 $show-image-home: true;
+$show-image-other: true;
 $image-home: url(../img/internet-technology.jpg);
+$image-other: url(../img/programing-area.jpg);
 $background-opacity: 0.9;
 
 // Mixin
@@ -12,9 +16,20 @@ $background-opacity: 0.9;
 @mixin background {
     @if $show-image-home {
         &#bg-image {
-            background: linear-gradient(rgba(3, 40, 61, 0.938),
+            background: linear-gradient(rgba(3, 48, 75, 0.938),
             rgba(1, 51, 71, 0.856)),
             $image-home ;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+}
+@mixin backgroundOther {
+    @if $show-image-other {
+        &#bg-image-all {
+            background: linear-gradient(rgba(9, 43, 63, 0.966),
+            rgba(29, 48, 56, 0.959)),
+            $image-other ;
             background-attachment: fixed;
             background-size: cover;
         }

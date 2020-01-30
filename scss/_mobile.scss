@@ -12,6 +12,10 @@
 
 // Tablet & min labtop
 @include mediaMd {
+
+    .icons-prof {
+        display: none;
+    }
     main {
         text-align: center;
         line-height: 1;
@@ -44,6 +48,10 @@
         .portrait {
             width: 150px;
             height: 65%;
+            margin: .2rem;
+        }
+        .prof {
+            margin: .2rem 0;
         }
     }
 
@@ -57,14 +65,35 @@
     }
     .bio {
         margin: 1rem;
+        line-height: 1.5;
         h3 {
             padding: 1rem 0;
         }
     }
-    .job {
-        margin: 1rem 0;
-        h5 {
-            padding: .5rem 0;
+    .under-line {
+        margin: 2rem 0;
+        width: 100%;
+    }
+    .card {
+        margin-top: 1rem;
+    }
+    h5 {
+        padding: .5rem  0 1rem 0;
+    }
+       
+    .about-info2 {
+        grid-template-areas:
+        'under under'
+        'job1 job2'
+        'job3 job4'
+        'job5 job5'
+        'job6 job6';
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+
+        .job4 {
+            grid-area: job4;
+            margin: 0;
         }
     }
     .project {
@@ -78,6 +107,23 @@
             margin: 1rem 0;
         }
     }
+
+    // Skills Section 
+.about-info3 {
+    display: grid;
+    grid-template-areas:
+    'under under'
+    'job1 job2'
+    'job3 job4'
+    'job5 job6'
+    'job7 job7';
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .job6 {
+        width: 100%;
+    }
+}
 }
 
 // Smartphons
@@ -85,5 +131,9 @@
     .project {
         grid-template-columns: 1fr;
     }
+    .icons-contact {
+        h3 {
+            display: block;
+        }
+    }
 }
-
