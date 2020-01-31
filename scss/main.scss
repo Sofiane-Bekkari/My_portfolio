@@ -62,8 +62,15 @@ main {
     }
     &#home {
 
-      h1 {
+
+      h3 {
           margin-top: 20vh;
+          font-size: 2rem;
+          margin-bottom: 0;
+          display: inline-block;
+      }
+      h1 {
+          font-size: 3.5rem;
       }
     }
 }
@@ -126,7 +133,7 @@ main {
         border-bottom: solid $secondary-color;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
         margin-bottom: 2rem;
-        
+        position: relative;
         ul {
             font-size: .9rem;
             padding: 0 0 0 .9rem;
@@ -136,6 +143,13 @@ main {
             }
         }
         .date {
+            display: flex;
+            justify-content:left;
+            align-items: flex-end;
+            padding: 0;
+            height: 40px;
+            margin-top: .5rem;
+            margin-bottom: 0;
             color: darken($primary-sec-color ,6) ;
         }
 
@@ -242,7 +256,8 @@ main {
     grid-template-areas:
     'under under under under'
     'job1 job2 job3 job4'
-    'job5 job6 job6 job7';
+    'job5 job6 job6 job7'
+    'job8 job8 job9 job9';
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
 
@@ -273,6 +288,12 @@ main {
     .job7 {
         grid-area: job7;
     }
+    .job8 {
+        grid-area: job8;
+    }
+    .job9 {
+        grid-area: job9;
+    }
     .under-line {
         grid-area: under;
         text-align: center;
@@ -290,20 +311,26 @@ main {
 
         .skill {
             img {
-                width: 40%;
+                width: 100px;
             }
             .lo-js {
                 padding-top: 1rem;
             }
             .lo-py {
-                width: 35%;
+                width: 80px;
                 padding-top: 1.5rem;
             }
             .lo-sa {
-                width: 80%;
+                width: 170px;
             }
             .lo-gi {
-                width: 40%;
+                width: 110px;
+            }
+            .lo-ci {
+                width: 150px;
+            }
+            .lo-ju {
+                width: 150px;
             }
     }
     }
@@ -349,11 +376,30 @@ main {
 }
 
 // Contact Page 
+
+#contact {
+ 
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: center;
+
+        .box {
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
 .icons-contact {
     h3 {
         display: inline-block;
         margin-bottom: .8rem;
         margin-right: .5rem;
+        font-weight: 600;
     }
 
     .fab {
@@ -393,6 +439,7 @@ main {
     text-align: center;
     padding: 2rem;
     background: darken($primary-color, 10);
+    font-size: .9rem;
 }
 // Our Media At End for it take place! 
 @import 'mobile';

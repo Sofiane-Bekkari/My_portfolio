@@ -161,8 +161,13 @@ main {
       main .icons a:hover {
         color: #0683c2;
         transition: all .5s ease; }
+  main#home h3 {
+    margin-top: 20vh;
+    font-size: 2rem;
+    margin-bottom: 0;
+    display: inline-block; }
   main#home h1 {
-    margin-top: 20vh; }
+    font-size: 3.5rem; }
 
 #bg-image-all#bg-image-all {
   background: linear-gradient(rgba(9, 43, 63, 0.966), rgba(29, 48, 56, 0.959)), url(../img/programing-area.jpg);
@@ -207,7 +212,8 @@ main {
     background: #10455e;
     border-bottom: solid #0683c2;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    position: relative; }
     .about-info .card ul {
       font-size: .9rem;
       padding: 0 0 0 .9rem;
@@ -215,6 +221,13 @@ main {
       .about-info .card ul li {
         padding: .5rem 0; }
     .about-info .card .date {
+      display: flex;
+      justify-content: left;
+      align-items: flex-end;
+      padding: 0;
+      height: 40px;
+      margin-top: .5rem;
+      margin-bottom: 0;
       color: #04202d; }
     .about-info .card h5 {
       margin: .5rem 0; }
@@ -284,7 +297,7 @@ main {
 
 .about-info3 {
   display: grid;
-  grid-template-areas: 'under under under under' 'job1 job2 job3 job4' 'job5 job6 job6 job7';
+  grid-template-areas: 'under under under under' 'job1 job2 job3 job4' 'job5 job6 job6 job7' 'job8 job8 job9 job9';
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
   .about-info3 .under-line {
@@ -303,6 +316,10 @@ main {
     grid-area: job6; }
   .about-info3 .job7 {
     grid-area: job7; }
+  .about-info3 .job8 {
+    grid-area: job8; }
+  .about-info3 .job9 {
+    grid-area: job9; }
   .about-info3 .under-line {
     grid-area: under;
     text-align: center;
@@ -315,16 +332,20 @@ main {
     .about-info3 .card-cert h5 {
       margin: .5rem; }
     .about-info3 .card-cert .skill img {
-      width: 40%; }
+      width: 100px; }
     .about-info3 .card-cert .skill .lo-js {
       padding-top: 1rem; }
     .about-info3 .card-cert .skill .lo-py {
-      width: 35%;
+      width: 80px;
       padding-top: 1.5rem; }
     .about-info3 .card-cert .skill .lo-sa {
-      width: 80%; }
+      width: 170px; }
     .about-info3 .card-cert .skill .lo-gi {
-      width: 40%; }
+      width: 110px; }
+    .about-info3 .card-cert .skill .lo-ci {
+      width: 150px; }
+    .about-info3 .card-cert .skill .lo-ju {
+      width: 150px; }
   .about-info3 .job6 {
     margin: 0 auto;
     width: 60%; }
@@ -351,10 +372,19 @@ main {
     border-bottom: solid #0683c2;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24); }
 
+#contact .contact-box {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center; }
+  #contact .contact-box .box span {
+    font-weight: 600; }
+
 .icons-contact h3 {
   display: inline-block;
   margin-bottom: .8rem;
-  margin-right: .5rem; }
+  margin-right: .5rem;
+  font-weight: 600; }
 
 .icons-contact .fab {
   font-size: 1.8rem;
@@ -377,7 +407,8 @@ main {
 #main-footer {
   text-align: center;
   padding: 2rem;
-  background: #092532; }
+  background: #092532;
+  font-size: .9rem; }
 
 @media screen and (min-width: 1171px) {
   .project {
@@ -411,6 +442,20 @@ main {
       margin: .2rem; }
     .menu-branding .prof {
       margin: .2rem 0; }
+  #home h3.f-header {
+    font-size: 2rem; }
+  #home h1.lg-header {
+    margin-top: 1rem;
+    font-size: 3rem; }
+  #home h2.sm-header {
+    font-size: 1.4rem; }
+  #home .icons {
+    font-size: .8rem; }
+  h1.lg-header {
+    margin-top: 5vh;
+    font-size: 3rem; }
+  .under-line {
+    font-size: 2rem; }
   .about-info {
     display: flex;
     flex-direction: column;
@@ -445,13 +490,29 @@ main {
       margin: 1rem 0; }
   .about-info3 {
     display: grid;
-    grid-template-areas: 'under under' 'job1 job2' 'job3 job4' 'job5 job6' 'job7 job7';
+    grid-template-areas: 'under under' 'job1 job2' 'job3 job4' 'job5 job6' 'job7 job7' 'job8 job9';
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr); }
     .about-info3 .job6 {
-      width: 100%; } }
+      width: 100%; }
+  footer#main-footer {
+    font-size: .75rem; } }
 
 @media screen and (max-width: 500px) {
+  #home h3.f-header {
+    font-size: 1.5rem; }
+  #home h1.lg-header {
+    margin-top: 1rem;
+    font-size: 2.5rem; }
+  #home h2.sm-header {
+    font-size: 1.4rem; }
+  #home .icons {
+    font-size: .8rem; }
+  h1.lg-header {
+    margin-top: 5vh;
+    font-size: 2.5rem; }
+  .under-line {
+    font-size: 1.7rem; }
   .project {
     grid-template-columns: 1fr; }
   .icons-contact h3 {
