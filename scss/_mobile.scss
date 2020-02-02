@@ -47,7 +47,7 @@
 
         .portrait {
             width: 150px;
-            height: 65%;
+            height: 150px;
             margin: .2rem;
         }
         .prof {
@@ -160,10 +160,16 @@ footer {
 // Smartphons
 @include mediaSm {
 
+    .menu-btn {
+        position: fixed;
+        top: 0%;
+    }
     #home {
         line-height: 1.3;
+
         h3.f-header {
             font-size: 1.5rem;
+            margin-top: 10vh;
         }
         h1.lg-header {
             margin-top: 1rem;
@@ -191,4 +197,31 @@ footer {
             display: block;
         }
     }
+    #about {
+        width: 90%;
+        margin: 6.5rem auto 0 auto;
+        padding: 0;
+
+             // Skills Section 
+.about-info3 {
+    display: grid;
+    grid-template-areas:
+    'under under'
+    'job1 job2'
+    'job3 job4'
+    'job5 job6'
+    'job7 job7'
+    'job8 job9';
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .job6 {
+        width: 50%;
+    }
+    .img {
+        width:50%;
+    }
+}
+    }
+
 }
