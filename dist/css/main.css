@@ -216,7 +216,7 @@ main {
     margin-bottom: 2rem;
     position: relative; }
     .about-info .card ul {
-      font-size: .9rem;
+      font-size: 1rem;
       padding: 0 0 0 .9rem;
       margin: 0; }
       .about-info .card ul li {
@@ -408,14 +408,56 @@ main {
     color: #0c3244; }
 
 #main-footer {
+  height: 15vh;
   text-align: center;
+  position: relative;
   padding: 2rem;
   background: #092532;
   font-size: .9rem; }
 
 @media screen and (min-width: 1171px) {
   .project {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  #info {
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    font-size: .7rem;
+    padding: 0;
+    top: 20%;
+    left: 1%; }
+    #info ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      #info ul li {
+        display: inline-block;
+        padding: .2rem;
+        text-align: left; }
+  #text-footer {
+    width: 50%;
+    margin: auto; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #info {
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    font-size: .7rem;
+    padding: 0;
+    top: 20%;
+    left: 1%; }
+    #info ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      #info ul li {
+        display: inline-block;
+        padding: .2rem;
+        text-align: left; }
+  #text-footer {
+    width: 50%;
+    margin-left: 50%; } }
 
 @media screen and (max-width: 768px) {
   .icons-prof {
@@ -499,7 +541,9 @@ main {
     .about-info3 .job6 {
       width: 100%; }
   footer#main-footer {
-    font-size: .75rem; } }
+    font-size: .75rem; }
+  footer #info {
+    display: none; } }
 
 @media screen and (max-width: 500px) {
   .menu-btn {
@@ -538,4 +582,6 @@ main {
       #about .about-info3 .job6 {
         width: 50%; }
       #about .about-info3 .img {
-        width: 50%; } }
+        width: 50%; }
+  #info {
+    display: none; } }

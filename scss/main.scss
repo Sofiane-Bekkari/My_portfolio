@@ -136,7 +136,7 @@ main {
         margin-bottom: 2rem;
         position: relative;
         ul {
-            font-size: .9rem;
+            font-size: 1rem;
             padding: 0 0 0 .9rem;
             margin: 0;
             li {
@@ -439,10 +439,15 @@ main {
 }
 
 #main-footer {
+    height: 15vh;
     text-align: center;
+    position: relative;
     padding: 2rem;
     background: darken($primary-color, 10);
     font-size: .9rem;
+
+   
+    
 }
 // Our Media At End for it take place! 
 @import 'mobile';

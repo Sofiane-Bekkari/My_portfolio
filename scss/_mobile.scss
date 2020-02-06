@@ -3,10 +3,59 @@
     .project {
         grid-template-columns: repeat(4, 1fr);
     }
+    #info {
+        display: inline-block;
+        width: 30%;
+        position: absolute;
+        font-size: .7rem;
+        padding: 0;
+        top: 20%;
+        left: 1%;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                padding: .2rem;
+                text-align: left;
+            }
+        }
+    }
+    #text-footer {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 // Desktop & Laptop
 @include mediaLg {
+
+    #info {
+        display: inline-block;
+        width: 30%;
+        position: absolute;
+        font-size: .7rem;
+        padding: 0;
+        top: 20%;
+        left: 1%;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                padding: .2rem;
+                text-align: left;
+            }
+        }
+    }
+    #text-footer {
+        width: 50%;
+        margin-left: 50%;
+    }
     
 }
 
@@ -152,9 +201,13 @@ footer {
 
     &#main-footer {
     font-size: .75rem;
-    }
-}
 
+        }
+
+        #info {
+            display: none;
+        }
+    }
 }
 
 // Smartphons
@@ -222,6 +275,10 @@ footer {
         width:50%;
     }
 }
+    }
+
+    #info {
+        display: none;
     }
 
 }
