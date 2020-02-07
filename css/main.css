@@ -188,7 +188,7 @@ main {
     object-fit: cover;
     object-position: top;
     margin: auto;
-    height: 23vh;
+    height: 180px;
     border-radius: 50%;
     border: solid #0683c2; }
   .about-info .under-line {
@@ -434,6 +434,8 @@ main {
         display: inline-block;
         padding: .2rem;
         text-align: left; }
+        #info ul li a:hover {
+          text-decoration: underline; }
   #text-footer {
     width: 50%;
     margin: auto; } }
@@ -455,6 +457,8 @@ main {
         display: inline-block;
         padding: .2rem;
         text-align: left; }
+        #info ul li a:hover {
+          text-decoration: underline; }
   #text-footer {
     width: 50%;
     margin-left: 50%; } }
