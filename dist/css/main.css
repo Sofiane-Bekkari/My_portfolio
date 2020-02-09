@@ -161,13 +161,15 @@ main {
       main .icons a:hover {
         color: #0683c2;
         transition: all .5s ease; }
-  main#home h3 {
-    margin-top: 20vh;
-    font-size: 2rem;
-    margin-bottom: 0;
-    display: inline-block; }
-  main#home h1 {
-    font-size: 3.5rem; }
+  main#home {
+    height: 100vh; }
+    main#home h3 {
+      margin-top: 20vh;
+      font-size: 2rem;
+      margin-bottom: 0;
+      display: inline-block; }
+    main#home h1 {
+      font-size: 3.5rem; }
 
 #bg-image-all#bg-image-all {
   background: linear-gradient(rgba(9, 43, 63, 0.966), rgba(29, 48, 56, 0.959)), url(../img/programing-area.jpg);
@@ -275,7 +277,7 @@ main {
     .about-info2 .card-cert .date {
       display: inline-block;
       padding: .5rem;
-      color: #83d1f5;
+      color: #84d1f5;
       margin-top: .5rem;
       margin-left: auto;
       margin-right: auto; }
@@ -382,6 +384,11 @@ main {
   justify-content: center; }
   #contact .contact-box .box span {
     font-weight: 600; }
+  #contact .contact-box .box .contact-info {
+    color: #fff; }
+    #contact .contact-box .box .contact-info:hover {
+      text-decoration: underline;
+      color: #669a9c; }
 
 .icons-contact h3 {
   display: inline-block;
@@ -414,6 +421,10 @@ main {
   padding: 2rem;
   background: #092532;
   font-size: .9rem; }
+  #main-footer #text-footer {
+    padding: 1rem; }
+  #main-footer .text-all {
+    padding: 1rem; }
 
 @media screen and (min-width: 1171px) {
   .project {
@@ -460,8 +471,8 @@ main {
         #info ul li a:hover {
           text-decoration: underline; }
   #text-footer {
-    width: 50%;
-    margin-left: 50%; } }
+    margin-left: 50%;
+    font-size: .8rem; } }
 
 @media screen and (max-width: 768px) {
   .icons-prof {
@@ -550,6 +561,14 @@ main {
     display: none; } }
 
 @media screen and (max-width: 500px) {
+  #bg-image-all#bg-image-all {
+    background: linear-gradient(rgba(9, 43, 63, 0.966), rgba(29, 48, 56, 0.959)), url(../img/programing-area.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right; }
+  .prof {
+    width: 50%;
+    text-align: center; }
   .menu-btn {
     position: fixed;
     top: 0%; }
@@ -588,4 +607,8 @@ main {
       #about .about-info3 .img {
         width: 50%; }
   #info {
-    display: none; } }
+    display: none; }
+  #main-footer #text-footer {
+    padding: 0; }
+  #main-footer .text-all {
+    padding: 0; } }

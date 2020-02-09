@@ -65,8 +65,8 @@
         }
     }
     #text-footer {
-        width: 50%;
         margin-left: 50%;
+        font-size: .8rem;
     }
     
 }
@@ -224,7 +224,13 @@ footer {
 
 // Smartphons
 @include mediaSm {
-
+    #bg-image-all {
+        @include backgroundOtherSm;
+    }
+    .prof {
+        width: 50%;
+        text-align: center;
+    }
     .menu-btn {
         position: fixed;
         top: 0%;
@@ -291,6 +297,14 @@ footer {
 
     #info {
         display: none;
+    }
+    #main-footer {
+        #text-footer {
+            padding: 0;
+        }
+        .text-all {
+            padding: 0;
+        }
     }
 
 }

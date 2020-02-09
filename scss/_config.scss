@@ -2,7 +2,8 @@
 $primary-color: #10455e;
 $primary-sec-color: #073449;
 $secondary-color: #0683c2;
-$secondary-sec-color: #83d1f5;
+$secondary-sec-color: #84d1f5;
+$dark-light-color: #669a9c;
 $show-image-home: true;
 $show-image-other: true;
 $image-home: url(../img/computer-display.jpg);
@@ -13,6 +14,7 @@ $background-opacity: 0.9;
 @mixin easeOut {
     transition: all .5s ease;
 }
+// BACKGROUND FOR MAIN PAGE
 @mixin background {
     @if $show-image-home {
         &#bg-image {
@@ -24,6 +26,7 @@ $background-opacity: 0.9;
         }
     }
 }
+// BACKGROUND FOR ABOUT PAGE
 @mixin backgroundOther {
     @if $show-image-other {
         &#bg-image-all {
@@ -32,6 +35,19 @@ $background-opacity: 0.9;
             $image-other ;
             background-attachment: fixed;
             background-size: cover;
+        }
+    }
+}
+// BACKGROUND FOR ABOUT PAGE SMALL SC!
+@mixin backgroundOtherSm {
+    @if $show-image-other {
+        &#bg-image-all {
+            background: linear-gradient(rgba(9, 43, 63, 0.966),
+            rgba(29, 48, 56, 0.959)),
+            $image-other ;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: right;
         }
     }
 }

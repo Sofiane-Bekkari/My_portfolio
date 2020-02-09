@@ -45,7 +45,6 @@ header {
 }
 main {
     padding: 4rem;
-    //height: 100vh;
     min-height: calc(100vh - 2rem );
     .icons {
         margin-top: 1rem;
@@ -61,7 +60,7 @@ main {
         }
     }
     &#home {
-
+        height: 100vh;
 
       h3 {
           margin-top: 20vh;
@@ -393,7 +392,16 @@ main {
 
             span {
                 font-weight: 600;
-            }
+            }   
+           .contact-info {
+               color:#fff;
+
+               &:hover {
+                   text-decoration: underline;
+                   color: $dark-light-color;
+               }
+
+           }
         }
     }
 }
@@ -445,9 +453,14 @@ main {
     padding: 2rem;
     background: darken($primary-color, 10);
     font-size: .9rem;
+    #text-footer {
+        padding: 1rem;
+    }
+    .text-all {
+        padding: 1rem;
+    }
 
-   
-    
 }
+
 // Our Media At End for it take place! 
 @import 'mobile';
