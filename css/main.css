@@ -1,3 +1,25 @@
+.project-tech {
+  display: block;
+  padding: .5rem 0;
+  margin: 0 auto; }
+  .project-tech .project-btn {
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: 2px;
+    display: inline-block;
+    background: #056595;
+    padding: .2rem .3rem;
+    margin: .1rem 0;
+    color: #073449;
+    cursor: pointer; }
+    .project-tech .project-btn:hover {
+      color: #ccc; }
+
+.proj-text {
+  font-size: .8rem;
+  font-weight: light;
+  letter-spacing: 0.5px; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -301,7 +323,7 @@ main {
 
 .about-info3 {
   display: grid;
-  grid-template-areas: 'under under under under' 'job1 job2 job3 job4' 'job5 job6 job6 job7' 'job8 job8 job9 job9';
+  grid-template-areas: 'under under under under' 'job1 job2 job3 job4' 'job5 job6 job7 job8' 'job9 job9 job10 job10';
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
   .about-info3 .under-line {
@@ -324,6 +346,8 @@ main {
     grid-area: job8; }
   .about-info3 .job9 {
     grid-area: job9; }
+  .about-info3 .job10 {
+    grid-area: job10; }
   .about-info3 .under-line {
     grid-area: under;
     text-align: center;
@@ -351,6 +375,8 @@ main {
       width: 150px; }
     .about-info3 .card-cert .skill .lo-ju {
       width: 150px; }
+    .about-info3 .card-cert .skill .lo-ss {
+      width: 120px; }
   .about-info3 .job6 {
     margin: 0 auto;
     width: 60%; }
@@ -375,7 +401,7 @@ main {
     padding: 1rem;
     background: #10455e;
     border-bottom: solid #0683c2;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24); }
+    box-shadow: 2px 2px 5px #0000003d; }
 
 #contact .contact-box {
   display: flex;
