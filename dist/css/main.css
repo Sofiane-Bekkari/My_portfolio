@@ -1,3 +1,25 @@
+.project-tech {
+  display: block;
+  padding: .5rem 0;
+  margin: 0 auto; }
+  .project-tech .project-btn {
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: 2px;
+    display: inline-block;
+    background: #056595;
+    padding: .2rem .3rem;
+    margin: .1rem 0;
+    color: #073449;
+    cursor: pointer; }
+    .project-tech .project-btn:hover {
+      color: #ccc; }
+
+.proj-text {
+  font-size: .8rem;
+  font-weight: light;
+  letter-spacing: 0.5px; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -375,7 +397,7 @@ main {
     padding: 1rem;
     background: #10455e;
     border-bottom: solid #0683c2;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24); }
+    box-shadow: 2px 2px 5px #0000003d; }
 
 #contact .contact-box {
   display: flex;

@@ -51,6 +51,32 @@ $background-opacity: 0.9;
         }
     }
 }
+// BTN PROJECT TECH
+.project-tech {
+    display: block;
+    padding: .5rem 0;
+    margin: 0 auto;
+    .project-btn {
+        font-size: .8rem;
+        font-weight: bold;
+        border-radius: 2px;
+        display: inline-block;
+        background: darken($secondary-color, $amount: 9) ;
+        padding: .2rem .3rem;
+        margin:.1rem 0;
+        color: $primary-sec-color;
+        cursor: pointer;
+        &:hover {
+            color: #ccc;
+        }
+    }
+}
+// Updateing Pargraphy ON Project CARD!
+.proj-text {
+    font-size: .8rem;
+    font-weight: light;
+    letter-spacing: 0.5px;
+}
 
 // Set Text Color 
 @function set-text-color($color) {
