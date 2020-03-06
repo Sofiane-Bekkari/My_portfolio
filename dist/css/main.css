@@ -323,7 +323,7 @@ main {
 
 .about-info3 {
   display: grid;
-  grid-template-areas: 'under under under under' 'job1 job2 job3 job4' 'job5 job6 job6 job7' 'job8 job8 job9 job9';
+  grid-template-areas: 'under under under under' 'job1 job2 job3 job4' 'job5 job6 job7 job8' 'job9 job9 job10 job10';
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
   .about-info3 .under-line {
@@ -346,6 +346,8 @@ main {
     grid-area: job8; }
   .about-info3 .job9 {
     grid-area: job9; }
+  .about-info3 .job10 {
+    grid-area: job10; }
   .about-info3 .under-line {
     grid-area: under;
     text-align: center;
@@ -373,6 +375,8 @@ main {
       width: 150px; }
     .about-info3 .card-cert .skill .lo-ju {
       width: 150px; }
+    .about-info3 .card-cert .skill .lo-ss {
+      width: 120px; }
   .about-info3 .job6 {
     margin: 0 auto;
     width: 60%; }
