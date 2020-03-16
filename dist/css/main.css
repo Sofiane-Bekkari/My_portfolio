@@ -174,7 +174,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 2rem); }
+  min-height: calc(90vh - 2rem); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -184,14 +184,34 @@ main {
         color: #0683c2;
         transition: all .5s ease; }
   main#home {
-    height: 100vh; }
+    height: 80vh; }
     main#home h3 {
-      margin-top: 20vh;
-      font-size: 2rem;
+      margin-top: 15vh;
+      font-size: 1.5rem;
       margin-bottom: 0;
       display: inline-block; }
     main#home h1 {
       font-size: 3.5rem; }
+  main #cv-down {
+    text-align: center;
+    width: 220px;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 2px;
+    display: inline-block;
+    background: #092837;
+    color: #10455e;
+    padding: .3rem .3rem;
+    margin: 0rem 0;
+    color: #0794db;
+    opacity: .8;
+    cursor: pointer; }
+    main #cv-down a {
+      transition: all .3s ease-in;
+      color: #619496; }
+      main #cv-down a:hover {
+        color: #ccc; }
 
 #bg-image-all#bg-image-all {
   background: linear-gradient(rgba(9, 43, 63, 0.966), rgba(29, 48, 56, 0.959)), url(../img/programing-area.jpg);

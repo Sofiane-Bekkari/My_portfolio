@@ -30,6 +30,7 @@ h3 {
         margin-bottom: 1rem;
     }
 }
+
 .text-secondary {
     color: $secondary-color;
 }
@@ -45,7 +46,7 @@ header {
 }
 main {
     padding: 4rem;
-    min-height: calc(100vh - 2rem );
+    min-height: calc(90vh - 2rem );
     .icons {
         margin-top: 1rem;
 
@@ -60,11 +61,11 @@ main {
         }
     }
     &#home {
-        height: 100vh;
+        height: 80vh;
 
       h3 {
-          margin-top: 20vh;
-          font-size: 2rem;
+          margin-top: 15vh;
+          font-size: 1.5rem;
           margin-bottom: 0;
           display: inline-block;
       }
@@ -72,7 +73,31 @@ main {
           font-size: 3.5rem;
       }
     }
-}
+    // BTN DOWNLOAD CV
+    #cv-down {
+        text-align: center;
+        width: 220px;
+        font-size: .8rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        border-radius: 2px;
+        display: inline-block;
+        background: darken($primary-color, $amount: 9) ;
+        color: $primary-color;
+        padding: .3rem .3rem;
+        margin:0rem 0;
+        color: lighten($secondary-color, $amount: 5);
+        opacity: .8;
+        a {
+            transition: all .3s ease-in ;
+            color: darken($dark-light-color, $amount: 2);
+            &:hover {
+                color: #ccc;
+            }
+        }
+         cursor: pointer;
+        }
+    }
 
 // About Page Style 
 #bg-image-all {
