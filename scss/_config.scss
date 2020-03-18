@@ -86,6 +86,16 @@ $background-opacity: 0.9;
         @return #fff;
     }
 }
+// Button ReadMore Style 
+#btn-read {
+    border: none;
+    border-bottom: solid 1px $secondary-color;
+    background: none;
+    color: darken($secondary-color, 9);
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
 
 // Media Query Mixin
 

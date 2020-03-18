@@ -29,6 +29,13 @@
             }
         }
     }
+     // Button Hide it on lager screen
+     #btn-read {
+        display: none;
+    }
+    .hide-lg {
+        display: none;
+    }
     #text-footer {
         width: 50%;
         margin: auto;
@@ -63,6 +70,13 @@
                 }
             }
         }
+    }
+     // Button Hide it on lager & medium screen
+     #btn-read {
+        display: none;
+    }
+    .hide-lg {
+        display: none;
     }
     #text-footer {
         margin-left: 50%;
@@ -153,6 +167,15 @@
         h3 {
             padding: 1rem 0;
         }
+    }
+    #more-line {
+        display: none;
+    }
+    .hide-lg {
+        display: inline;
+    }
+    #btn-read {
+        display: inline-block;
     }
     .under-line {
         margin: 2rem 0;
