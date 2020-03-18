@@ -11,7 +11,7 @@ let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-    if(!showMenu) {
+    if (!showMenu) {
         menuBtn.classList.add('close');
         menu.classList.add('show');
         menuNav.classList.add('show');
@@ -30,5 +30,22 @@ function toggleMenu() {
         // Set Menu State
         showMenu = false;
     }
+}
 
+// Button Function for Read more & Read less in ABOUT page!
+function myBtnRead() {
+    let dotPoint = document.getElementById('dots');
+    let moreLine = document.getElementById('more-line');
+    let btnRead = document.getElementById('btn-read');
+    console.log(dotPoint);
+
+    if (dotPoint.style.display === "none") {
+        dotPoint.style.display = "inline"
+        moreLine.style.display = "none"
+        btnRead.innerHTML = "Read More"
+    } else {
+        dotPoint.style.display = "none"
+        moreLine.style.display = "inline"
+        btnRead.innerHTML = "Read Less"
+    }
 }

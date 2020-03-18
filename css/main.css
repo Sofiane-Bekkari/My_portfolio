@@ -20,6 +20,15 @@
   font-weight: light;
   letter-spacing: 0.5px; }
 
+#btn-read {
+  border: none;
+  border-bottom: solid 1px #0683c2;
+  background: none;
+  color: #056595;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -493,6 +502,10 @@ main {
         text-align: left; }
         #info ul li a:hover {
           text-decoration: underline; }
+  #btn-read {
+    display: none; }
+  .hide-lg {
+    display: none; }
   #text-footer {
     width: 50%;
     margin: auto; } }
@@ -516,6 +529,10 @@ main {
         text-align: left; }
         #info ul li a:hover {
           text-decoration: underline; }
+  #btn-read {
+    display: none; }
+  .hide-lg {
+    display: none; }
   #text-footer {
     margin-left: 50%;
     font-size: .8rem; } }
@@ -574,6 +591,12 @@ main {
     line-height: 1.5; }
     .bio h3 {
       padding: 1rem 0; }
+  #more-line {
+    display: none; }
+  .hide-lg {
+    display: inline; }
+  #btn-read {
+    display: inline-block; }
   .under-line {
     margin: 2rem 0;
     width: 100%; }
