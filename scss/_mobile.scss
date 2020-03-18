@@ -77,6 +77,7 @@
     .icons-prof {
         display: none;
     }
+
     main {
         text-align: center;
         line-height: 1.2;
@@ -118,7 +119,7 @@
     #home {
 
         h3.f-header {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         h1.lg-header {
             margin-top: 1rem;
@@ -200,7 +201,8 @@
     'job3 job4'
     'job5 job6'
     'job7 job7'
-    'job8 job9';
+    'job8 job9'
+    'job10 job10';
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 
@@ -282,7 +284,8 @@ footer {
     'job3 job4'
     'job5 job6'
     'job7 job7'
-    'job8 job9';
+    'job8 job9'
+    'job10 job10';
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 

@@ -549,7 +549,7 @@ main {
     .menu-branding .prof {
       margin: .2rem 0; }
   #home h3.f-header {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   #home h1.lg-header {
     margin-top: 1rem;
     font-size: 3rem; }
@@ -596,7 +596,7 @@ main {
       margin: 1rem 0; }
   .about-info3 {
     display: grid;
-    grid-template-areas: 'under under' 'job1 job2' 'job3 job4' 'job5 job6' 'job7 job7' 'job8 job9';
+    grid-template-areas: 'under under' 'job1 job2' 'job3 job4' 'job5 job6' 'job7 job7' 'job8 job9' 'job10 job10';
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr); }
     .about-info3 .job6 {
@@ -645,7 +645,7 @@ main {
     padding: 0; }
     #about .about-info3 {
       display: grid;
-      grid-template-areas: 'under under' 'job1 job2' 'job3 job4' 'job5 job6' 'job7 job7' 'job8 job9';
+      grid-template-areas: 'under under' 'job1 job2' 'job3 job4' 'job5 job6' 'job7 job7' 'job8 job9' 'job10 job10';
       grid-gap: 1rem;
       grid-template-columns: repeat(2, 1fr); }
       #about .about-info3 .job6 {
