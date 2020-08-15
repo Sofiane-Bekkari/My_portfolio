@@ -1,15 +1,15 @@
-# Myportfolio
-###My personal portfolio is fully responsive
-###version 1.0.0
+# My portfolio
+### My personal portfolio is fully responsive
+### version 1.0.0
 
 ## Pages:
-### Home
-### About
-### Poject
-### Contact
+#### Home
+#### About
+#### Poject
+#### Contact
 
 ## Tchnology used
-### HTML5
-### CCS
-### SASS
-### JavaScript
+#### HTML5
+#### CCS
+#### SASS
+#### JavaScript
