@@ -1,6 +1,6 @@
-# My_portfolio
-My personal portfolio is fully responsive
-version 1.0.0
+# Myportfolio
+###My personal portfolio is fully responsive
+###version 1.0.0
 
 ## Pages:
 ### Home
