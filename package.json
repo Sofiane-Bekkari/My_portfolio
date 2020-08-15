@@ -13,5 +13,15 @@
   "dependencies": {
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sofiane-Bekkari/My_portfolio.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/Sofiane-Bekkari/My_portfolio/issues"
   }
 }
