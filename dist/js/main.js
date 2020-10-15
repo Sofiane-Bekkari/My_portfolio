@@ -37,7 +37,7 @@ function myBtnRead() {
     let dotPoint = document.getElementById('dots');
     let moreLine = document.getElementById('more-line');
     let btnRead = document.getElementById('btn-read');
-    console.log(dotPoint);
+    //console.log(dotPoint);
 
     if (dotPoint.style.display === "none") {
         dotPoint.style.display = "inline"
